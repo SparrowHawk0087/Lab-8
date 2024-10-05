@@ -6,10 +6,14 @@
  
  begin
    var year := ReadInteger('Введите год:');
+
    if (year mod 4 = 0) and not((year mod 100 = 0) and (year mod 400  <> 0)) then
-     Println($'{year} - Високосный год!')
+
+     Println($'{year} - Високосный год! 366 дней в году.');
+     flag := true;
    else 
-     Println($'{year} - Не високосный год!');
+     Println($'{year} - Не високосный год! 365 дней в году.');
+
  end.
  
  {
